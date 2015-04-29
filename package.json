@@ -1,0 +1,25 @@
+{
+  "name": "pennywise",
+  "version": "1.0.0",
+  "description": "personal cashflow",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wjmoody03/pennywise"
+  },
+  "keywords": [
+    "cash",
+    "budget",
+    "personal",
+    "finance"
+  ],
+  "author": "Jacob Moody",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wjmoody03/pennywise/issues"
+  },
+  "homepage": "https://github.com/wjmoody03/pennywise"
+}
