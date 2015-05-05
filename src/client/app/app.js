@@ -2,7 +2,10 @@
     'use strict';
 
     angular.module('pennywise', [
-        'pw.scrubber'
+        'ngRoute',
+        'pw.scrubber',
+        'pw.dashboard',
+        'pw.transactions'
     ]);
     
 })();

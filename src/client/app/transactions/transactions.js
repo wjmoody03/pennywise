@@ -2,13 +2,13 @@
     'use strict';
 
     angular
-        .module('pw.scrubber',[])
-        .controller('Scrubber', Scrubber);
+        .module('pw.transactions',[])
+        .controller('Transactions', Scrubber);
 
     Scrubber.$inject = [];
     function Scrubber() {
         
-        this.hello="c as";
+        this.hello="all yo stuff";
         
     }
     

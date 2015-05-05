@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html data-ng-app="pennywise">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
-    <title>pennywise</title>
-    <style>
-        /* This helps the ng-show/ng-hide animations start at the right place. */
-        /* Since Angular has this but needs to load, this gives us the class early. */
-        .ng-hide {
-            display: none!important;
-        }
-    </style>
-</head>
-<body>
-    <h1>will this work?</h1>
-    
-    <div ng-controller="Scrubber">
-        {{hello}}
-    </div>
-    
-    <script src="/bower_components/angular/angular.js"></script>
-    
-    <script src="app/scrubber/scrubber.js"></script>
-    <script src="app/app.js"></script>
-    
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+        <title>pennywise</title>
+        <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/sandstone/bootstrap.min.css" rel="stylesheet">
+        <link href="/bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="/src/client/content/styles.css" rel="stylesheet" />
 
+        <style>
+            /* This helps the ng-show/ng-hide animations start at the right place. */
+            /* Since Angular has this but needs to load, this gives us the class early. */
+            .ng-hide {
+                display: none!important;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div ng-include="'app/layout/topnav.html'">
+        </div>
+        <div class="container" ng-view>
+        </div>
 
-</body>
+        <script src="/bower_components/angular/angular.js"></script>  
+        <script src="/bower_components/angular-route/angular-route.min.js"></script>  
+                
+        <script src="app/scrubber/scrubber.js"></script>
+        <script src="app/dashboard/dashboard.js"></script>
+        <script src="app/transactions/transactions.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/app.routes.js"></script>
+    </body>
 </html>
