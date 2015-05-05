@@ -25,5 +25,13 @@
   "dependencies": {
     "express": "^4.12.3",
     "mongodb": "^2.0.28"
+  },
+  "paths": {
+    "client": "./src/client/",
+    "server": "./src/server/",
+    "api": "/api"
+  },
+  "devDependencies": {
+    "nodemon": "^1.3.7"
   }
 }
